@@ -1,0 +1,10 @@
+# Python
+__pycache__
+content/.ipynb_checkpoints/
+
+# Pelican
+output
+*.pid
+
+# Vim
+*.sw?

@@ -1,0 +1,9 @@
+name: blog.weatherforce.org
+channels:
+- conda-forge
+- defaults
+dependencies:
+- ipython=6.2.1=py36_1
+- nbconvert=5.3.1=py_1
+- pelican=3.7.1=py36_0
+- markdown=2.6.11=py_0
