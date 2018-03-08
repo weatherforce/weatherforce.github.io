@@ -8,4 +8,4 @@ dependencies:
 - nbconvert=5.3.1=py_1
 - markdown=2.6.11=py_0
 - pip:
-  - "--editable=git+https://github.com/getpelican/pelican.git@72756a5#egg=pelican-master"
+  - "--editable=git+https://github.com/getpelican/pelican.git@72756a5#egg=pelican"
