@@ -1074,6 +1074,59 @@ h6:hover .anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>To illustrate what we can do with a weather-notebook container, we'll <a href="ftp://ftp.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/">download a GFS GRIB file</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="o">!</span><span class="nb">cd</span> data <span class="o">&amp;&amp;</span> wget ftp://ftp.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.2018030806/gfs.t06z.pgrb2.0p25.f000
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>--2018-03-08 13:09:19--  ftp://ftp.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.2018030806/gfs.t06z.pgrb2.0p25.f000
+           =&gt; ‘gfs.t06z.pgrb2.0p25.f000’
+Resolving ftp.ncep.noaa.gov (ftp.ncep.noaa.gov)... 140.90.101.61
+Connecting to ftp.ncep.noaa.gov (ftp.ncep.noaa.gov)|140.90.101.61|:21... connected.
+Logging in as anonymous ... Logged in!
+==&gt; SYST ... done.    ==&gt; PWD ... done.
+==&gt; TYPE I ... done.  ==&gt; CWD (1) /pub/data/nccf/com/gfs/prod/gfs.2018030806 ... done.
+==&gt; SIZE gfs.t06z.pgrb2.0p25.f000 ... 190894193
+==&gt; PASV ... done.    ==&gt; RETR gfs.t06z.pgrb2.0p25.f000 ... done.
+Length: 190894193 (182M) (unauthoritative)
+
+gfs.t06z.pgrb2.0p25 100%[===================&gt;] 182.05M  8.57MB/s    in 21s     
+
+2018-03-08 13:09:41 (8.68 MB/s) - ‘gfs.t06z.pgrb2.0p25.f000’ saved [190894193]
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>We're going to use <a href="http://xarray.pydata.org/">xarray</a> with the <a href="https://www.pyngl.ucar.edu/Nio.shtml">pynio</a> backend to open the GRIB file. Since pynio hasn't been ported to Python 3 at the time of writing, we must create a Python 2 notebook. (You may also convert the GRIB file to NetCDF if you'd rather work with Python 3.)</p>
 <p>Let's import xarray with the standard alias:</p>
 
@@ -1082,7 +1135,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">xarray</span> <span class="kn">as</span> <span class="nn">xr</span>
@@ -1104,11 +1157,10 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s2">&quot;data/weather-notebook/gfs.t06z.pgrb2.0p25.f000&quot;</span><span class="p">,</span>
-                     <span class="n">engine</span><span class="o">=</span><span class="s2">&quot;pynio&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s2">&quot;data/gfs.t06z.pgrb2.0p25.f000&quot;</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s2">&quot;pynio&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -1127,7 +1179,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">temperature</span> <span class="o">=</span> <span class="n">ds</span><span class="p">[</span><span class="s1">&#39;TMP_P0_L1_GLL0&#39;</span><span class="p">]</span>
@@ -1144,7 +1196,7 @@ h6:hover .anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[46]:</div>
+<div class="prompt output_prompt">Out[57]:</div>
 
 
 
@@ -1187,7 +1239,7 @@ Attributes:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">temperature</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">));</span>
