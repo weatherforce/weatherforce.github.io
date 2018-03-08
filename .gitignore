@@ -8,3 +8,6 @@ output
 
 # Vim
 *.sw?
+
+# Weather data is too big to be stored in the repo
+content/data/
