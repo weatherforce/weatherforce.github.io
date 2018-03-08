@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'WeatherForce'
 SITENAME = 'WeatherForce Tech Blog'
-SITEURL = ''
+SITEURL = 'http://tech.weatherforce.org'
 SITEIMAGE = '/images/logo.png'# Pelican Alchemy
 THEME = "pelican-alchemy/alchemy"
 ARTICLE_URL = 'blog/{slug}/'
@@ -28,8 +28,9 @@ DEFAULT_LANG = 'en'
 DEFAULT_DATE_FORMAT = '%d %B %Y'
 LOCALE = ('en_US', )
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+# Feed settings
+FEED_DOMAIN = SITEURL
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
