@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="/theme/css/theme.css">
 
   
-  <meta name="description" content="At WeatherForce, we do a lot of data analysis with Jupyter notebooks. Since installing Python libraries for meteorology can take a bit of time, we've decided to create a Docker image containing useful libraries for working with weather data. We've also included Python 2, which is still required by GRIB libraries.">
+  <meta name="description" content="At WeatherForce, we do a lot of data analysis with Jupyter notebooks. Since setting up an environment for meteorological data can take a bit of time, we've decided to create a Docker image containing a suitable ready-to-use environment. The Jupyter project encourages this approach by providing a hierarchy of ready-made Docker images">
 
 
 </head>
@@ -27,7 +27,7 @@
     <div class="container">
 <div class="row">
     <div class="col-sm-4">
-      <a href="/">
+      <a href="https://weatherforce.org/">
         <img class="img-fluid rounded" src=/images/logo.png alt="WeatherForce Tech Blog">
       </a>
     </div>
@@ -47,11 +47,7 @@
       <ul class="list-inline">
         <li class="list-inline-item text-muted" title="2018-03-08T00:00:00+01:00">
           <i class="fa fa-clock-o"></i>
-          jeu. 08 mars 2018
-        </li>
-        <li class="list-inline-item">
-          <i class="fa fa-folder-open-o"></i>
-          <a href="/category/posts.html">posts</a>
+          08 March 2018
         </li>
           <li class="list-inline-item">
             <i class="fa fa-user-o"></i>
@@ -1038,8 +1034,8 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>At <a href="http://weatherforce.org">WeatherForce</a>, we do a lot of data analysis with <a href="https://jupyter.org/">Jupyter notebooks</a>. Since installing Python libraries for meteorology can take a bit of time, we've decided to create a Docker image containing useful libraries for working with weather data. We've also included Python 2, which is still required by GRIB libraries.</p>
-<p>The Jupyter project encourages this approach by providing <a href="https://github.com/jupyter/docker-stacks/">a hierarchy of ready-made Docker images</a>. So we extended the <a href="https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook">Data Science Stack</a> provided by the Jupyter project to create the <a href="https://github.com/weatherforce/weather-notebook">Weather Notebook</a> image.</p>
+<p>At <a href="http://weatherforce.org">WeatherForce</a>, we do a lot of data analysis with <a href="https://jupyter.org/">Jupyter notebooks</a>. Since setting up an environment for meteorological data can take a bit of time, we've decided to create a Docker image containing a suitable ready-to-use environment.</p>
+<p>The Jupyter project encourages this approach by providing <a href="https://github.com/jupyter/docker-stacks/">a hierarchy of ready-made Docker images</a>. Among those images, the <a href="https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook">Data Science Stack</a> image provides a notebook installation with Python 3, R and Julia. We extended that image with useful libraries to create the <a href="https://github.com/weatherforce/weather-notebook">Weather Notebook</a> image.  We've also included Python 2, which is still required by GRIB libraries.</p>
 <p>In order to use our weather-notebook image, you'll need to have Docker installed. If you haven't installed it yet, you should follow <a href="https://docs.docker.com/install/">instructions from the Docker website</a>.</p>
 
 </div>
@@ -1080,7 +1076,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="o">!</span><span class="nb">cd</span> data <span class="o">&amp;&amp;</span> wget ftp://ftp.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.2018030806/gfs.t06z.pgrb2.0p25.f000
@@ -1100,7 +1096,7 @@ h6:hover .anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>--2018-03-08 13:09:19--  ftp://ftp.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.2018030806/gfs.t06z.pgrb2.0p25.f000
+<pre>--2018-03-08 15:48:21--  ftp://ftp.ncep.noaa.gov/pub/data/nccf/com/gfs/prod/gfs.2018030806/gfs.t06z.pgrb2.0p25.f000
            =&gt; ‘gfs.t06z.pgrb2.0p25.f000’
 Resolving ftp.ncep.noaa.gov (ftp.ncep.noaa.gov)... 140.90.101.61
 Connecting to ftp.ncep.noaa.gov (ftp.ncep.noaa.gov)|140.90.101.61|:21... connected.
@@ -1111,9 +1107,9 @@ Logging in as anonymous ... Logged in!
 ==&gt; PASV ... done.    ==&gt; RETR gfs.t06z.pgrb2.0p25.f000 ... done.
 Length: 190894193 (182M) (unauthoritative)
 
-gfs.t06z.pgrb2.0p25 100%[===================&gt;] 182.05M  8.57MB/s    in 21s     
+gfs.t06z.pgrb2.0p25 100%[===================&gt;] 182.05M  4.25MB/s    in 45s     
 
-2018-03-08 13:09:41 (8.68 MB/s) - ‘gfs.t06z.pgrb2.0p25.f000’ saved [190894193]
+2018-03-08 15:49:08 (4.01 MB/s) - ‘gfs.t06z.pgrb2.0p25.f000’ saved [190894193]
 
 </pre>
 </div>
@@ -1135,7 +1131,7 @@ gfs.t06z.pgrb2.0p25 100%[===================&gt;] 182.05M  8.57MB/s    in 21s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">xarray</span> <span class="kn">as</span> <span class="nn">xr</span>
@@ -1157,7 +1153,7 @@ gfs.t06z.pgrb2.0p25 100%[===================&gt;] 182.05M  8.57MB/s    in 21s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s2">&quot;data/gfs.t06z.pgrb2.0p25.f000&quot;</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s2">&quot;pynio&quot;</span><span class="p">)</span>
@@ -1179,7 +1175,7 @@ gfs.t06z.pgrb2.0p25 100%[===================&gt;] 182.05M  8.57MB/s    in 21s
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">temperature</span> <span class="o">=</span> <span class="n">ds</span><span class="p">[</span><span class="s1">&#39;TMP_P0_L1_GLL0&#39;</span><span class="p">]</span>
@@ -1196,7 +1192,7 @@ gfs.t06z.pgrb2.0p25 100%[===================&gt;] 182.05M  8.57MB/s    in 21s
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[57]:</div>
+<div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -1239,10 +1235,11 @@ Attributes:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">temperature</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">));</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">temperature</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">));</span>
 </pre></div>
 
 </div>
@@ -1338,10 +1335,12 @@ Attributes:
   <ul class="col-sm-6 list-inline">
       <li class="list-inline-item"><a href="/authors.html">Authors</a></li>
     <li class="list-inline-item"><a href="/archives.html">Archives</a></li>
-    <li class="list-inline-item"><a href="/categories.html">Categories</a></li>
       <li class="list-inline-item"><a href="/tags.html">Tags</a></li>
   </ul>
-  <p class="col-sm-6 text-sm-right text-muted">
+  <p class="col-sm-3 text-sm-right text-muted">
+    Made by <a href="https://weatherforce.org">WeatherForce</a>
+  </p>
+  <p class="col-sm-3 text-sm-right text-muted">
     Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a>
     / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">&#x2728;</a>
   </p>
