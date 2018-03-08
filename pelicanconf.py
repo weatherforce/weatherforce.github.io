@@ -10,6 +10,10 @@ THEME = "pelican-alchemy/alchemy"
 ARTICLE_URL = 'blog/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 
+THEME_TEMPLATES_OVERRIDES = ['templates']
+LOGO_URL = 'https://weatherforce.org'
+
+
 MARKUP = ('md', 'ipynb')
 
 PLUGIN_PATHS = ['./plugins']

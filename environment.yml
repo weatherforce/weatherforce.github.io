@@ -6,5 +6,6 @@ dependencies:
 - ghp-import=0.5.5=py36_0
 - ipython=6.2.1=py36_1
 - nbconvert=5.3.1=py_1
-- pelican=3.7.1=py36_0
 - markdown=2.6.11=py_0
+- pip:
+  - "--editable=git+https://github.com/getpelican/pelican.git@72756a5#egg=pelican-master"
