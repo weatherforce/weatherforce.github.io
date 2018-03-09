@@ -1175,7 +1175,7 @@ Attributes:
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;We can see that this surface temperature. Let's draw a map:&lt;/p&gt;
+&lt;p&gt;We can see that this is surface temperature. Let's draw a map:&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1233,7 +1233,7 @@ Attributes:
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;We hope that this image will allow you to easly start exploring meteorological data.&lt;/p&gt;
+&lt;p&gt;We hope that this image will allow you to easily start exploring meteorological data.&lt;/p&gt;
 &lt;p&gt;Also feel free to &lt;a href="https://weatherforce.org/contact/"&gt;contact us&lt;/a&gt; if you wish to discuss how to integrate meteorological data within your organization.&lt;/p&gt;
 
 &lt;/div&gt;
