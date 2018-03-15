@@ -3,5 +3,6 @@ slug: multicore-grib-processing-xarray
 Date: 2018-03-15
 Category: posts
 Tags: python, jupyter, xarray, dask, grib
-Summary: Efficient weather data access with xarray parallelism
+Description: Efficient weather data access with xarray parallelism
+Image: /images/ssrd.png
 author: Alex Marandon

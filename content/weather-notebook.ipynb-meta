@@ -4,4 +4,4 @@ Date: 2018-03-08
 Category: posts
 Tags: python, jupyter, docker, xarray, netcdf, grib
 author: Alex Marandon
-Summary: A ready-to-use Jupyter notebook for meteorology packaged as a Docker image
+Description: A ready-to-use Jupyter notebook for meteorology packaged as a Docker image
