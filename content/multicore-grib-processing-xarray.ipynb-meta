@@ -1,5 +1,5 @@
 Title: Multicore GRIB processing with xarray
-Slug: multicore-grib-processing-xarray
+slug: multicore-grib-processing-xarray
 Date: 2018-03-15
 Category: posts
 Tags: python, jupyter, xarray, dask, grib
