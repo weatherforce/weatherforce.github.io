@@ -980,7 +980,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;In today's post, we're going to use &lt;a href="http://xarray.pydata.org/"&gt;xarray&lt;/a&gt; multicore capabilities to access a fairly large weather dataset using Python. To illustrate our purpose, we'll look at 15 years of solar radiations provided by the ECMWF. It takes a while to retrieve such a large dataset from the ECMWF, so I'll just give &lt;a href="https://drive.google.com/file/d/1WNFOnPoHa-R6ur9F9KiHYJDNgI49MJvw/view?usp=sharing"&gt;a direct link to a file with 15 years of data&lt;/a&gt; that I've previously retrieved from the ECMWF (9.5GB GRIB file). While you're downloading this file, read on to understand how you can retrieve your own datasets from the ECMWF.&lt;/p&gt;
+&lt;p&gt;In today's post, we're going to use &lt;a href="http://xarray.pydata.org/"&gt;xarray&lt;/a&gt; multicore capabilities to access a fairly large weather dataset using Python. To illustrate our purpose, we'll look at 15 years of solar radiations provided by the ECMWF. It takes a while to retrieve such a large dataset from the ECMWF, so I'll just give &lt;a href="https://drive.google.com/file/d/1WNFOnPoHa-R6ur9F9KiHYJDNgI49MJvw/view?usp=sharing"&gt;a direct link to a file with 15 years of data&lt;/a&gt; that I've previously retrieved (9.5GB GRIB file). While you're downloading this file, read on to understand how you can retrieve your own datasets from the ECMWF.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
@@ -997,7 +997,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;The ECMWF provides a convenient &lt;a href="https://software.ecmwf.int/wiki/display/WEBAPI/Access+ECMWF+Public+Datasets"&gt;Python library to access its dataset&lt;/a&gt;. In order to use it you'll need to create an ECMWF account and &lt;a href="https://software.ecmwf.int/wiki/display/WEBAPI/Access+ECMWF+Public+Datasets#AccessECMWFPublicDatasets-key"&gt;install your ECMWF key&lt;/a&gt;. Please read &lt;a href="https://software.ecmwf.int/wiki/display/WEBAPI/Access+ECMWF+Public+Datasets"&gt;the instructions on the ECMWF website&lt;/a&gt; for more info on setting up this library.&lt;/p&gt;
+&lt;p&gt;The ECMWF provides a convenient &lt;a href="https://software.ecmwf.int/wiki/display/WEBAPI/Access+ECMWF+Public+Datasets"&gt;Python library to access its dataset&lt;/a&gt;. In order to use it you'll need to create an ECMWF account and &lt;a href="https://software.ecmwf.int/wiki/display/WEBAPI/Access+ECMWF+Public+Datasets#AccessECMWFPublicDatasets-key"&gt;install your  key&lt;/a&gt;. Please read &lt;a href="https://software.ecmwf.int/wiki/display/WEBAPI/Access+ECMWF+Public+Datasets"&gt;the instructions on the ECMWF website&lt;/a&gt; for more info on setting up this library.&lt;/p&gt;
 &lt;p&gt;Once the library is properly installed on your system, you can use it to fetch a dataset with a bit of Python code. For instance, in the following snippet of code we request downwards solar radiation for the first 3 months of 2017:&lt;/p&gt;
 
 &lt;/div&gt;
@@ -1390,7 +1390,7 @@ Wall time: 27 s
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;26.5 seconds is not too bad. But if you have a multi-core computer, xarray can do better.&lt;/p&gt;
+&lt;p&gt;27 seconds is not too bad. But if you have a multi-core computer, xarray can do better.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
