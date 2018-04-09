@@ -1,0 +1,9 @@
+Title: Matplotlib animations from ECMWF data
+Slug: ecmwf-data-animation
+Date: 2018-04-06
+Category: posts
+Tags: python, jupyter, xarray, netcdf, matplotlib, ecmwf, cartopy
+author: Alex Marandon
+Description: How to generate animated maps from NetCDF data using Matplotlib and Cartopy
+Image: /images/carribean-map.png
+
