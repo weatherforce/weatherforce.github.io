@@ -7,5 +7,6 @@ dependencies:
 - ipython=6.2.1=py36_1
 - nbconvert=5.3.1
 - markdown=2.6.11=py_0
+- tornado=4.5.3=py36_0
 - pip:
   - "--editable=git+https://github.com/getpelican/pelican.git@72756a5#egg=pelican"
