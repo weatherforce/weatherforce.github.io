@@ -1,8 +1,8 @@
-Title: A legend for Ipyleaflet 
+Title: A legend for ipyleaflet 
 Date: 2020-04-17 12:03
 Category: Python
 Tags: jupyter, jupyter-notebook, ipyleaflet, ipywidget
-Slug: Ipyleaflet-Legend is released
+Slug:ipyleaflet-legend_release 
 Authors: Thomas Pouvreau
 
 
@@ -10,7 +10,7 @@ Authors: Thomas Pouvreau
 
 It is an implementation on jupyter notebook of a leaflet legend found in this [leaflet tutorial](https://leafletjs.com/examples/choropleth/). More precisely, it refers to the Custom Legend Control section. We won't go too far in details here, just have in mind that it is both a LeafletControl and an ipywidget. So it cannot work outside of ipyleaflet and must be instantiated with it. The good news is that since it is a LeafletControl, it can be positioned like any other ipyleaflet control. 
 
-A second Post will follow or a serie to explain how it was done. It might be an help to everyone seeking for importing leaflet widget on ipyleaflet using ipywidget. 
+A second Post or series will follow to explain how it was done. It might help everyone seeking for importing leaflet widget on ipyleaflet using ipywidget. 
 
 ## Install 
 
