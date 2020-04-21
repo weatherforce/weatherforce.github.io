@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>WeatherForce Tech Blog</title><link href="http://tech.weatherforce.org/" rel="alternate"></link><link href="http://tech.weatherforce.org/feeds/all.atom.xml" rel="self"></link><id>http://tech.weatherforce.org/</id><updated>2018-04-06T00:00:00+02:00</updated><entry><title>Matplotlib animations from ECMWF data</title><link href="http://tech.weatherforce.org/blog/ecmwf-data-animation/" rel="alternate"></link><published>2018-04-06T00:00:00+02:00</published><updated>2018-04-06T00:00:00+02:00</updated><author><name>Alex Marandon</name></author><id>tag:tech.weatherforce.org,2018-04-06:/blog/ecmwf-data-animation/</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>WeatherForce Tech Blog</title><link href="http://tech.weatherforce.org/" rel="alternate"></link><link href="http://tech.weatherforce.org/feeds/all.atom.xml" rel="self"></link><id>http://tech.weatherforce.org/</id><updated>2020-04-17T12:03:00+02:00</updated><entry><title>A legend for ipyleaflet</title><link href="http://tech.weatherforce.org/blog/ipyleaflet-legend-release/" rel="alternate"></link><published>2020-04-17T12:03:00+02:00</published><updated>2020-04-17T12:03:00+02:00</updated><author><name>Thomas Pouvreau</name></author><id>tag:tech.weatherforce.org,2020-04-17:/blog/ipyleaflet-legend-release/</id><summary type="html">&lt;h1&gt;Introducing ipyleaflet-legend&lt;/h1&gt;
+&lt;p&gt;ipyleaflet-legend is a leaflet legend to be used in jupyter-notebook. ipyleaflet-legend is based on the information found in the Custom Legend Control section of this &lt;a href="https://leafletjs.com/examples/choropleth/"&gt;leaflet tutorial&lt;/a&gt;. We won't go too far into details here, just have in mind that it is both a LeafletControl and an ipywidget …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Introducing ipyleaflet-legend&lt;/h1&gt;
+&lt;p&gt;ipyleaflet-legend is a leaflet legend to be used in jupyter-notebook. ipyleaflet-legend is based on the information found in the Custom Legend Control section of this &lt;a href="https://leafletjs.com/examples/choropleth/"&gt;leaflet tutorial&lt;/a&gt;. We won't go too far into details here, just have in mind that it is both a LeafletControl and an ipywidget. Therefore, ipyleaflet-legend must be instantiated with ipyleaflet. The good news is that since it is a LeafletControl, it can be positioned just like any other ipyleaflet control. &lt;/p&gt;
+&lt;p&gt;A second Post or series will follow to explain how ipyleaflet-legend was made. This tutorial might help anyone wanting to import leaflet widget on ipyleaflet using ipywidget.&lt;/p&gt;
+&lt;h2&gt;Install&lt;/h2&gt;
+&lt;p&gt;At the command prompt enter:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install ipyleaflet-legend
+jupyter nbextension &lt;span class="nb"&gt;enable&lt;/span&gt; ipyleaflet_legend --py --sys-prefix
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;Note: if you are not in a virtual environment, use --user instead of --sys-prefix to enable it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Basic Use&lt;/h2&gt;
+&lt;p&gt;Since ipyleaflet-legend is a Leaflet Control implementation for ipyleaflet, we need to instantiate a map:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;ipyleaflet&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Map&lt;/span&gt;
+&lt;span class="n"&gt;mymap&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Map&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;center&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;45&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;zoom&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;mymap&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And then add a simple legend:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;ipyleaflet_legend&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;Legend&lt;/span&gt;
+&lt;span class="n"&gt;my_legend&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Legend&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;low&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;#FAA&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;medium&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;#A55&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;High&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;#500&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Legend&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;mymap&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add_control&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;my_legend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;This is the output of the result in your notebook:
+&lt;img alt="image" src="/images/map_legend.png"&gt;&lt;/p&gt;
+&lt;p&gt;More details on &lt;a href="https://github.com/weatherforce/ipyleaflet-legend/blob/master/example/test_legend.ipynb"&gt;repository notebook example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;p&gt;T.Pouvreau @Weatherforce&lt;/p&gt;</content><category term="jupyter"></category><category term="jupyter-notebook"></category><category term="ipyleaflet"></category><category term="ipywidget"></category></entry><entry><title>Matplotlib animations from ECMWF data</title><link href="http://tech.weatherforce.org/blog/ecmwf-data-animation/" rel="alternate"></link><published>2018-04-06T00:00:00+02:00</published><updated>2018-04-06T00:00:00+02:00</updated><author><name>Alex Marandon</name></author><id>tag:tech.weatherforce.org,2018-04-06:/blog/ecmwf-data-animation/</id><summary type="html">
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -2369,7 +2402,7 @@ h6:hover .anchor-link {
 &lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[1]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;xarray&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;xr&lt;/span&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;xarray&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;xr&lt;/span&gt;
 &lt;span class="n"&gt;ds&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;xr&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;open_dataset&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;data/Surface_solar_radiation_downwards-2002-2016.grib&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;engine&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;pynio&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -3966,7 +3999,7 @@ gfs.t06z.pgrb2.0p25 100%[===================&amp;gt;] 182.05M  4.25MB/s    in 45
 &lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[2]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;xarray&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;xr&lt;/span&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;xarray&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;xr&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
