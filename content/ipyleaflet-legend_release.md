@@ -1,20 +1,20 @@
-Title: A legend for ipyleaflet 
+Title: A legend for ipyleaflet
 Date: 2020-04-17 12:03
 Category: Python
 Tags: jupyter, jupyter-notebook, ipyleaflet, ipywidget
-Slug:ipyleaflet-legend_release 
+Slug: ipyleaflet-legend-release
 Authors: Thomas Pouvreau
 
 
 # Introducing ipyleaflet-legend
 
-It is an implementation on jupyter notebook of a leaflet legend found in this [leaflet tutorial](https://leafletjs.com/examples/choropleth/). More precisely, it refers to the Custom Legend Control section. We won't go too far in details here, just have in mind that it is both a LeafletControl and an ipywidget. So it cannot work outside of ipyleaflet and must be instantiated with it. The good news is that since it is a LeafletControl, it can be positioned like any other ipyleaflet control. 
+ipyleaflet-legend is a leaflet legend to be used in jupyter-notebook. ipyleaflet-legend is based on the information found in the Custom Legend Control section of this [leaflet tutorial](https://leafletjs.com/examples/choropleth/). We won't go too far into details here, just have in mind that it is both a LeafletControl and an ipywidget. Therefore, ipyleaflet-legend must be instantiated with ipyleaflet. The good news is that since it is a LeafletControl, it can be positioned just like any other ipyleaflet control. 
 
-A second Post or series will follow to explain how it was done. It might help everyone seeking for importing leaflet widget on ipyleaflet using ipywidget. 
+A second Post or series will follow to explain how ipyleaflet-legend was made. This tutorial might help anyone wanting to import leaflet widget on ipyleaflet using ipywidget.
 
-## Install 
+## Install
 
-Just hit:
+At the command prompt enter:
 
 ```bash
 pip install ipyleaflet-legend
@@ -24,7 +24,7 @@ jupyter nbextension enable ipyleaflet_legend --py --sys-prefix
 
 ## Basic Use
 
-Since it is a Leaflet Control implementation for ipyleaflet, we need to instantiate a map: 
+Since ipyleaflet-legend is a Leaflet Control implementation for ipyleaflet, we need to instantiate a map:
 
 ```python
 from ipyleaflet import Map
@@ -39,12 +39,12 @@ my_legend = Legend({"low":"#FAA", "medium":"#A55", "High":"#500"}, name="Legend"
 mymap.add_control(my_legend)
 ```
 
-And this is is what you will obtains as a final result into your notebook: 
+This is the output of the result in your notebook:
 ![image](/images/map_legend.png)
 
 
 More details on [repository notebook example](https://github.com/weatherforce/ipyleaflet-legend/blob/master/example/test_legend.ipynb)
 
-Enjoy !
+Enjoy!
 
-T.Pouvreau @Weatherforce 
+T.Pouvreau @Weatherforce
