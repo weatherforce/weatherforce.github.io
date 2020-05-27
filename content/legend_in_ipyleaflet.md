@@ -1,0 +1,12 @@
+Title: A legend in ipyleaflet
+Date: 2020-05-27 10:53
+Category: Python
+Tags: jupyter, jupyter-notebook, ipyleaflet
+Slug: legend-in-ipyleaflet
+Authors: Thomas Pouvreau
+
+
+# A legend for ipyleaflet
+
+In a previous blog post, we announced the release of [ipyleaflet-legend](http://tech.weatherforce.org/blog/ipyleaflet-legend-release/). Well soon after the release we had an issue on our repository from Ipyleaflet maintener [martinRenou](https://github.com/martinRenou), asking if we were willing to put the code directly in Ipyleaflet code base. We were, and we did !It is now released and available as LegendControl, within Ipyleaflet. Do not hesitate to try it out, [here is an example](https://ipyleaflet.readthedocs.io/en/stable/api_reference/legend_control.html) 
+
