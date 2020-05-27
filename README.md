@@ -13,7 +13,7 @@ Make sure you have [Anaconda](https://anaconda.org/) installed and create a cond
 
 Activate the conda environment:
 
-    $ source activate blog
+    $ conda activate blog
 
 Start a development server:
 
