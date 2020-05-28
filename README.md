@@ -2,10 +2,15 @@
 
 ## How to edit this blog
 
+### Get code
 Clone the repository and `cd` to your clone:
 
     $ git clone --recursive git@github.com:weatherforce/weatherforce.github.io.git
     $ cd weatherforce.github.io
+
+### Virtual env
+
+#### Conda
 
 Make sure you have [Anaconda](https://anaconda.org/) installed and create a conda env:
 
@@ -14,6 +19,18 @@ Make sure you have [Anaconda](https://anaconda.org/) installed and create a cond
 Activate the conda environment:
 
     $ source activate blog
+
+#### Virtualenv
+
+Make sure you have virtualenv installed.
+
+```bash
+python3 -m virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Run project
 
 Start a development server:
 
