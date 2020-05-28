@@ -10,7 +10,8 @@ Authors: Thomas Pouvreau
 
 ![image](/images/map_legend.png)
 
-In a previous blog post, we announced the release of [ipyleaflet-legend](http://tech.weatherforce.org/blog/ipyleaflet-legend-release/). Soon after the release,issue was filled on our repository from Ipyleaflet maintainer [martinRenou](https://github.com/martinRenou), asking if we were willing to put the code directly in Ipyleaflet code base. We were, and we did !It is now released and available as LegendControl, within Ipyleaflet. Do not hesitate to try it out, [here is an example](https://ipyleaflet.readthedocs.io/en/stable/api_reference/legend_control.html)
+In a previous blog post, we announced the release of [ipyleaflet-legend](http://tech.weatherforce.org/blog/ipyleaflet-legend-release/). Soon after the release, Something unexpected happened! An issue was filled on our repository from ipyleaflet maintainer [martinRenou](https://github.com/martinRenou)!Martin asked if we were willing to put the code directly in ipyleaflet code base. We were, and we did! It is now released and available as LegendControl, within ipyleaflet:tada:. Do not hesitate to try it out, [here is an example](https://ipyleaflet.readthedocs.io/en/stable/api_reference/legend_control.html)
 
-We are very proud to have contributed to [Ipyleaflet](https://ipyleaflet.readthedocs.io/en/stable/), and we would like to thanks the Ipyleaflet team for the opportunity of doing so. 
+We are very proud to have contributed to [ipyleaflet](https://ipyleaflet.readthedocs.io/en/stable/), and we would like to thanks Martin and the ipyleaflet team for the opportunity of doing so. :+1: 
+
 
