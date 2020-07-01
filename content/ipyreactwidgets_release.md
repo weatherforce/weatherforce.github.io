@@ -5,7 +5,7 @@ Tags: jupyter, jupyter-notebook, ipyreactwidgets
 Slug: ipyreactwidgets-release
 Authors: Thomas Pouvreau
 
-# Do you like React? Do you like ipywidgets? Then you should have a look at IpyReactWidgets!
+# Do you like React? Do you like ipywidgets? Then you should have a look at ipyreactwidgets!
 
 We are proud to present a simple yet functioning version of a widget library for jupyter notebook using React for the front end. It does not aim to replace the great [ipywidgets](https://github.com/jupyter-widgets/ipywidgets) project. Instead, the project focuses on providing an alternative solution focused on using React for building widgets. For this specific use case, a React implementation of ipywidgets allows us to leverage both the efficiency and the ease of use of the React framework. Furthermore, using React allows developers to easily incorporate the [Material-UI](https://material-ui.com/) library into their project taking advantage of cool features such as theming and its component library designed with UX/UI best practices.
 
@@ -18,6 +18,6 @@ To get details, do not hesitate to checkout [the documentation](https://weatherf
 
 And if you are eager to try it out, have a look at [the quickstart](https://weatherforce-platform.gitlab.io/ipyreactwidgets/quickstart.html) !
 
-This project is still at an early stage, yet if you want to get involved, you can start by have a look at our [developer guide](https://weatherforce-platform.gitlab.io/ipyreactwidgets/quickstart.html), fork it and start coding and give us a pull request!
+This project is still at an early stage so it would be great if you would like to get involved. You can start by have a look at our [developer guide](https://weatherforce-platform.gitlab.io/ipyreactwidgets/quickstart.html), start coding and send us a pull request!
 
 If you encounter any issues or want to add new features then please raise an issue (here)[https://gitlab.com/weatherforce-platform/ipyreactwidgets/-/issues]
