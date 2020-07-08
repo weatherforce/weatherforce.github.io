@@ -1,4 +1,4 @@
-Title: A way to build widgets on Jupyter Notebook with React
+Title:  You are a found of React and would like to use it to build widgets for your notebooks ? 
 Date: 2020-07-08 15:30
 Category: Python
 Tags: jupyter, jupyter-notebook, ipyreactwidgets
@@ -19,15 +19,17 @@ React allows us to leverage both its efficiency and usability, through the state
 
 
 ## Where do I start ? 
- 
-The project is now quite young, yet it might become your next favorite widget library to build dashboards from notebooks!
-To get started, you can have a look at [the code here](https://gitlab.com/weatherforce-platform/ipyreactwidgets).
 
-To get details, do not hesitate to checkout [the documentation](https://weatherforce-platform.gitlab.io/ipyreact/)
+The project is quite young, yet it might become your next favorite widget library to build dashboards from notebooks!
+To get started :
 
-And if you are eager to try it out, have a look at [the quickstart](https://weatherforce-platform.gitlab.io/ipyreact/quickstart.html) !
+1. Have a look at the [the code here](https://gitlab.com/weatherforce-platform/ipyreactwidgets).
 
-This project is still at an early stage so it would be great if you would like to get involved. You can start by have a look at our [developer guide](https://weatherforce-platform.gitlab.io/ipyreact/make-a-widget.html), start coding and send us a pull request!
+2. Go check [the documentation](https://weatherforce-platform.gitlab.io/ipyreact/) for more details.
+
+3. Now let's start by following the steps in the [the quickstart](https://weatherforce-platform.gitlab.io/ipyreact/quickstart.html) !
+
+4. Get involved by looking at our developer guide, start coding and send us a pull request!
 
 <p align="center">
 	<img src="https://media.giphy.com/media/vyEMmgHf9dQ4M/giphy.gif"/>
