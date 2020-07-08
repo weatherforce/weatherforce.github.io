@@ -23,14 +23,14 @@ React allows us to leverage both its efficiency and usability, through the state
 The project is now quite young, yet it might become your next favorite widget library to build dashboards from notebooks!
 To get started, you can have a look at [the code here](https://gitlab.com/weatherforce-platform/ipyreactwidgets).
 
-To get details, do not hesitate to checkout [the documentation](https://weatherforce-platform.gitlab.io/ipyreactwidgets/)
+To get details, do not hesitate to checkout [the documentation](https://weatherforce-platform.gitlab.io/ipyreact/)
 
-And if you are eager to try it out, have a look at [the quickstart](https://weatherforce-platform.gitlab.io/ipyreactwidgets/quickstart.html) !
+And if you are eager to try it out, have a look at [the quickstart](https://weatherforce-platform.gitlab.io/ipyreact/quickstart.html) !
 
-This project is still at an early stage so it would be great if you would like to get involved. You can start by have a look at our [developer guide](https://weatherforce-platform.gitlab.io/ipyreactwidgets/quickstart.html), start coding and send us a pull request!
+This project is still at an early stage so it would be great if you would like to get involved. You can start by have a look at our [developer guide](https://weatherforce-platform.gitlab.io/ipyreact/make-a-widget.html), start coding and send us a pull request!
 
 <p align="center">
 	<img src="https://media.giphy.com/media/vyEMmgHf9dQ4M/giphy.gif"/>
 </p>
 
->Note:If you encounter any issues or want to add new features then please raise an issue [here](https://gitlab.com/weatherforce-platform/ipyreactwidgets/-/issues).
+>Note:If you encounter any issues or want to add new features then please raise an issue [here](https://gitlab.com/weatherforce-platform/ipyreact/-/issues).
