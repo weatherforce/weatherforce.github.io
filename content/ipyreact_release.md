@@ -22,7 +22,7 @@ React's state mechanism and JSX implementation gives developers great efficiency
 The project is quite young, yet it might become your next favorite widget library to build dashboards from notebooks!
 To get started :
 
-1. Have a look at the [the code here](https://gitlab.com/weatherforce-platform/ipyreactwidgets).
+1. Have a look at the [the code here](https://gitlab.com/weatherforce-platform/ipyreact).
 
 2. Go check [the documentation](https://weatherforce-platform.gitlab.io/ipyreact/) for more details.
 
