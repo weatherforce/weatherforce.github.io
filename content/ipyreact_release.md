@@ -1,22 +1,21 @@
-Title:  You are a found of React and would like to use it to build widgets for your notebooks ? 
+Title:Building Jupyter Notebook widgets with React
 Date: 2020-07-08 15:30
 Category: Python
 Tags: jupyter, jupyter-notebook, ipyreactwidgets
 Slug: ipyreactwidgets-release
 Authors: Thomas Pouvreau, Alex Blaza, Alex Amarandon
 
-# Hey! You are found of React, and would like to build widgets for your notebooks using it? then check this out !
+# Hey! Do you want to use React to build user interfaces for your jupyter notebooks? Then check this out!
 
 ![image](/images/ipyreact.png)
 
 ## IpyWhat? 
 
-We are proud to present __ipyreact__, a beta version of a widget library for jupyter notebook using React on the front end. The aim is not to replace the great [ipywidgets](https://github.com/jupyter-widgets/ipywidgets) project. Instead, ipyreact focuses on providing an alternative solution building widgets. 
-
+We are proud to present __ipyreact__, our widget library for jupyter notebook. It uses React for the front end, which provides a simple way to build complex widgets. The aim is not to replace the great [ipywidgets](https://github.com/jupyter-widgets/ipywidgets) project, but instead to offer an alternative.
+ 
 ## Why React? What for?  
 
-React allows us to leverage both its efficiency and usability, through the state mechanism, and of course, JSX. Furthermore, using React allows developers to easily incorporate the [Material-UI](https://material-ui.com/) library into their project taking advantage of cool features such as theming and its components library designed with UX/UI best practices. That use of good looking component with theming options might not be useful for notebooks use as internal tools to share code and experiment with it. However, It becomes necessary when it comes to build dashboard with tools such as Voila. In that particular case, the use of React as front end library will be very useful since it is its very purpose to provide a simple development tool for building complexe user interfaces. 
-
+React's state mechanism and JSX implementation gives developers great efficiency and usability benefits for building complex UIs. Ipyreact using React allows developers to use libraries from the React world in Jupyter notebooks. In the future, we would like to implement Material UI in ipyreact. This would provide high quality components, styling, animating and theming mechanisms that would dramatically enhance the quality of dashboards made from notebooks.
 
 ## Where do I start ? 
 
@@ -27,12 +26,13 @@ To get started :
 
 2. Go check [the documentation](https://weatherforce-platform.gitlab.io/ipyreact/) for more details.
 
-3. Now let's start by following the steps in the [the quickstart](https://weatherforce-platform.gitlab.io/ipyreact/quickstart.html) !
+3. Start by following the steps in the [the quickstart](https://weatherforce-platform.gitlab.io/ipyreact/quickstart.html) !
 
 4. Get involved by looking at our developer guide, start coding and send us a pull request!
+
+5. If you encounter any issues or want to add new features then please raise an issue [here](https://gitlab.com/weatherforce-platform/ipyreact/-/issues).
 
 <p align="center">
 	<img src="https://media.giphy.com/media/vyEMmgHf9dQ4M/giphy.gif"/>
 </p>
 
->Note:If you encounter any issues or want to add new features then please raise an issue [here](https://gitlab.com/weatherforce-platform/ipyreact/-/issues).
