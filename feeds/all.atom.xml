@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>WeatherForce Tech Blog</title><link href="http://tech.weatherforce.org/" rel="alternate"></link><link href="http://tech.weatherforce.org/feeds/all.atom.xml" rel="self"></link><id>http://tech.weatherforce.org/</id><updated>2020-07-08T15:30:00+02:00</updated><entry><title>Building Jupyter Notebook widgets with React</title><link href="http://tech.weatherforce.org/blog/ipyreactwidgets-release/" rel="alternate"></link><published>2020-07-08T15:30:00+02:00</published><updated>2020-07-08T15:30:00+02:00</updated><author><name>Thomas Pouvreau</name></author><id>tag:tech.weatherforce.org,2020-07-08:/blog/ipyreactwidgets-release/</id><summary type="html">&lt;h1&gt;Hey! Do you want to use React to build user interfaces for your jupyter notebooks? Then check this out!&lt;/h1&gt;
-&lt;p&gt;&lt;img alt="image" src="/images/ipyreact.png"&gt;&lt;/p&gt;
+&lt;div&gt;
+    &lt;img style="width:900px" src="/images/slider.gif"/&gt;
+&lt;/div&gt;
+
 &lt;h2&gt;IpyWhat?&lt;/h2&gt;
 &lt;p&gt;We are proud to present &lt;strong&gt;ipyreact&lt;/strong&gt;, our widget library for jupyter notebook. It uses React for the front end, which provides a simple way to build complex widgets. The aim …&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Hey! Do you want to use React to build user interfaces for your jupyter notebooks? Then check this out!&lt;/h1&gt;
-&lt;p&gt;&lt;img alt="image" src="/images/ipyreact.png"&gt;&lt;/p&gt;
+&lt;div&gt;
+    &lt;img style="width:900px" src="/images/slider.gif"/&gt;
+&lt;/div&gt;
+
 &lt;h2&gt;IpyWhat?&lt;/h2&gt;
 &lt;p&gt;We are proud to present &lt;strong&gt;ipyreact&lt;/strong&gt;, our widget library for jupyter notebook. It uses React for the front end, which provides a simple way to build complex widgets. The aim is not to replace the great &lt;a href="https://github.com/jupyter-widgets/ipywidgets"&gt;ipywidgets&lt;/a&gt; project, but instead to offer an alternative.&lt;/p&gt;
 &lt;h2&gt;Why React? What for?&lt;/h2&gt;
