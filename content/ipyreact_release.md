@@ -7,7 +7,9 @@ Authors: Thomas Pouvreau, Alex Blaza, Alex Amarandon
 
 # Hey! Do you want to use React to build user interfaces for your jupyter notebooks? Then check this out!
 
-![image](/images/ipyreact.png)
+<div>
+	<img style="width:900px" src="/images/slider.gif"/>
+</div>
 
 ## IpyWhat? 
 
