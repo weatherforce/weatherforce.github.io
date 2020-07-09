@@ -3,7 +3,7 @@ Date: 2020-07-08 15:30
 Category: Python
 Tags: jupyter, jupyter-notebook, ipyreactwidgets
 Slug: ipyreactwidgets-release
-Authors: Thomas Pouvreau, Alex Blaza, Alex Amarandon
+Authors: Thomas Pouvreau, Alex Blaza, Alex Marandon
 
 # Hey! Do you want to use React to build user interfaces for your jupyter notebooks? Then check this out!
 
